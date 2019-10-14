@@ -25,7 +25,8 @@ const userSchema = mongoose.Schema({
   },
   loginToken: {
     type: String
-  }, forgetToken: {
+  },
+   forgetToken: {
     type: String
   }
 }

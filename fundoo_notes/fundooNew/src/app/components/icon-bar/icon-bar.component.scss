@@ -1,0 +1,29 @@
+.icons{
+padding-left: 10px;
+padding-bottom: 10px;
+}
+
+.colorHolder{
+    width:100px;
+    height: 80px;
+    padding-left: 2PX;
+    border-radius: 80%;
+    //background-color: rgb(98, 155, 136)
+
+}
+// ::ng-deep .mat-icon{
+//   height:10px !important;
+//   width:10x !important;
+//   //font-size:48px !important;
+// }
+.dot {
+    height: 25px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    width: 24px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .mat-menu-panel{
+    border-radius: 30PX;
+  }

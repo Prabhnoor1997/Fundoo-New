@@ -145,8 +145,7 @@ class StockAccount {
         var transactionList = JSON.parse(transactions);
 
         try {
-            console.log(stocks.length , this.stockAccount.length);
-
+            
             for (var i = 0; i < stocks.length; i++) {
                 if (stocks[i].stockName == stockName) {
                     for (var j = 0; j < this.stockAccount.length; j++) {
@@ -182,8 +181,9 @@ class StockAccount {
 
     }
     save(stocks) {
+        
         stocks = JSON.stringify(stocks, null, 2);
-        fs.writeFileSync('./JSON/stocksAvailable.json', stocks);
+        fs.writeFileSync('./JSON/stocksholdings.json', stocks);
         return true;
     }
 

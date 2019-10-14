@@ -124,9 +124,19 @@ class util
 
  sqrt(n)
  {
-    
+    try
+    {
+        if(n<0)
+        throw"Cant find squae root of a negative number";
+    }
+
+    catch(err)
+    {
+     return err;   
+
+    }
     var epsilon = Math.pow(10,-15);
-    console.log(epsilon);
+    //console.log(epsilon);
     var t=n;
     while(1)
     {
@@ -136,11 +146,20 @@ class util
     t=(t+n/t)/2;
    
     }
-    console.log(t);
-
+    //console.log(t);
+    return(t);
  }
  nibble(n)
- {
+ {  try
+    {
+        if(typeof n!="number")
+        throw"Input must be a number";
+    }
+
+    catch(err)
+    {
+        return err;
+    }
     var s=this.binary(n);
     var n=s.length;
     //console.log(n);
@@ -172,6 +191,7 @@ class util
             
     }
     var ans= parseInt( snew, 2 );
+    
     console.log(ans); 
     var singleone=0;
     for(var i=0;i<snew.length;i++)
@@ -185,9 +205,39 @@ class util
     console.log("the number is a power of 2");
     else
     console.log("the number is not a power of 2");
-
+    return snew;
  }
- 
+ denominator(amount,p,notes)
+{   var arr=[ 1, 2, 5, 10, 50, 100, 500 ,1000];
+    try
+    {
+            if(typeof amount!="number" || typeof p!="number" || typeof notes!="number")
+            throw"The argumnets must be integers";
+    } 
+    catch(err)
+    {
+        console.log(err);
+        return err;
+    }
+    if(amount==0)
+    {
+        
+        return notes;
+    }
+
+    if(amount<arr[p])
+    {
+        return this.denominator(amount,p-1,notes)
+    }
+    if(amount>=arr[p])
+    {
+        notes++;
+         return this.denominator(amount-arr[p],p,notes)
+
+
+    }
+
+}
     
  
 }

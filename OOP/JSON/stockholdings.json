@@ -6,7 +6,7 @@
   },
   {
     "stockName": "Tata",
-    "totalShare": 1337,
+    "totalShare": 1287,
     "sharePrice": 400
   },
   {
@@ -32,7 +32,7 @@
   {
     "stockName": "HSBC",
     "sharePrice": 400,
-    "totalShare": 250
+    "totalShare": 80
   },
   {
     "stockName": "ION",

@@ -9,7 +9,7 @@ angular.module('routerApp').service('services',['$http','$state', function ($htt
         })
             .then(function (success) {
                 console.log("data after  success api call", success);
-                $state.login('dashboard');
+                $state.go('dashboard');
             }, function (error) {
                 console.log("data after error api call", error);
             })

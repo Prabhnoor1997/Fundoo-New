@@ -44,7 +44,7 @@ function mainfunc(){
                 }
             case '3':
                 {
-                    stockAccountObj.save();
+                    stockAccountObj.save(stockAccountObj);
                 }
                 break;
             case '4':

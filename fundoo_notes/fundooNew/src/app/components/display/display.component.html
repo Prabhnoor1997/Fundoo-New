@@ -1,0 +1,14 @@
+<div  class="noteGridContainer" >
+    <div  class="grid-row" >
+                <mat-card *ngFor="let value of notes; let i = index" (mouseover)="showIconTray=true" (mouseout)="showIconTray=false"  class="grid-item"  [ngStyle]="{background: value.color}" fxLayout="column" fxLayoutAlign="space-between stretch">
+              <div (click)=openDialog(value)>
+                {{showIconTray}}
+                <mat-card-title>{{value.title}}</mat-card-title>
+                <mat-card-content >{{value.description}}</mat-card-content>
+              </div>
+                <mat-card-footer (mouseover)="showIconTray=true" ><app-icon-bar   (eventCarrier)="recieveMessageFromIconTray($event,value.id)" ></app-icon-bar></mat-card-footer>
+              </mat-card>
+                
+      </div>
+
+</div>

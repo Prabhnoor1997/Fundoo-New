@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const userSchema = mongoose.Schema({
+const messageSchema = mongoose.Schema({
   senderName: {
     type: String,
     required: true
@@ -26,7 +26,7 @@ const userSchema = mongoose.Schema({
   timestamps: true
 });
 
-let Message = mongoose.model('Message', userSchema);
+let Message = mongoose.model('Message', messageSchema);
 module.exports=Message
 class messageModel{
 

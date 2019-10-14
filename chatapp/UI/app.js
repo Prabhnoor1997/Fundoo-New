@@ -85,11 +85,6 @@ routerApp.config(function ($stateProvider, $urlRouterProvider) {
         
 
     $urlRouterProvider.otherwise("login")
-
-
-
-
-
 })
 
 

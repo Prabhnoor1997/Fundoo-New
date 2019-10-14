@@ -1,14 +1,14 @@
 [
   {
-    "stock": "Compaq",
-    "type": "buy",
-    "amount": 500,
-    "time": "Mon Sep 09 2019 16:49:20 GMT+0530 (IST)"
+    "stock": "HSBC",
+    "type": "sell",
+    "amount": 50,
+    "time": "Tue Sep 10 2019 18:34:43 GMT+0530 (IST)"
   },
   {
-    "stock": "Capgemini",
+    "stock": "Tata",
     "type": "sell",
-    "amount": 500,
-    "time": "Mon Sep 09 2019 16:51:02 GMT+0530 (IST)"
+    "amount": 50,
+    "time": "Tue Sep 10 2019 18:35:10 GMT+0530 (IST)"
   }
 ]

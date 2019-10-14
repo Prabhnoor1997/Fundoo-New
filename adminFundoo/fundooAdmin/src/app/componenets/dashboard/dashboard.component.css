@@ -1,0 +1,28 @@
+.navbar{
+    background-color: #e8e7ce;
+
+}
+.logo{
+    width:50%;
+    height: 90%;
+}
+.searchBarContainer{
+    /* padding-top: 30px; */
+    width: 50%;
+
+margin: auto;
+    
+}
+.tableHead{
+    width:100%
+}
+.table-bordered {
+    border: 2px solid #252728;
+}
+.searchBar{
+ width: 100%;   
+}
+
+.d-flex{
+padding-top: 30px;
+}

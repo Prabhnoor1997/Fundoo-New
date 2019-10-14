@@ -19,3 +19,6 @@ describe('BinaryConversion',function(){
             assert.equal('1110',s.binary(14));
         });
     });
+
+
+    
